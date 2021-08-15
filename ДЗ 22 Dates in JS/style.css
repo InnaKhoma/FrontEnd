@@ -1,0 +1,74 @@
+@font-face {
+    font-family: DigitalDismay;
+    src: url(DigitalDismay.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: DigitalDismay;
+    color: #64ccc3;
+}
+
+body,
+#clock-wrapper,
+#hours-group,
+#minutes-group,
+#seconds-group,
+.colon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #1D1F20;
+    flex-direction: column;
+}
+
+#clock-wrapper {
+    bottom: 0;
+    font-size: 10em;
+    text-align: left;
+}
+
+#hours,
+#minutes,
+#seconds {
+    position: relative;
+}
+
+.colon {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 50px;
+    height: 100%;
+}
+
+#hours:before,
+#minutes:before,
+#seconds:before {
+    content: "00";
+    position: absolute;
+    opacity: 0.06;
+}
+
+.top-point,
+.bottom-point {
+    background-color: #64ccc3;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.date {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
