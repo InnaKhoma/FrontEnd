@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="script1.js" async></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <form id="form">
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control field" placeholder="Название товара" id="commodity" required>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control field" placeholder="Количество" id="quantity" required>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control field" placeholder="Цена" id="price" required>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary" id="addBtn">Добавить</button>
+                </div>
+            </div>
+        </form>
+        <table class="table">
+            <thead class="table-light">
+                <tr>
+                    <th>Название товара</th>
+                    <th>Количество</th>
+                    <th>Цена за 1 шт</th>
+                    <th>Удалить</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <tfoot>
+            <tr>
+                <td>Всего:</td>
+                <td id="quantityTotal">0</td>
+                <td id="priceTotal">0</td>
+                <td>-</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+form{
+    margin-bottom: 100px;
+}
+.container{
+    margin-top: 100px;
+}
+.col{
+    position: relative;
+}
+.error{
+    position: absolute;
+    top: -20px;
+    color: firebrick;
+    font-size: 12px;
+}
+.delete{
+    border: none;
+}
