@@ -42,7 +42,8 @@ function addTodo(e) {
     if(formValidation()){
         let html = TODO_TEMPLATE
             .replace("{{title}}", document.getElementById('input').value)
-            .replace("{{class}}", '');
+            .replace("{{class}}", '')
+            .replace("data-id=\"{{id}}\"", '');
 
         list.insertAdjacentHTML("beforeend", html);
 
