@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todolist</title>
+    <script src="script1.js" async></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <form>
+        <label for="input">Введите город</label>
+        <input type="text" id="input" name="input"/>
+        <button id="show">Прогноз</button>
+        </form>
+    </div>
+    <script type="text/template" id="forecastTemplate">
+            <p>Температура: {{temp}}℃</p>
+            <p>{{clouds}}</p>
+            <p>Влажность: {{humidity}} %</p>
+            <p>Давление: {{pressure}} hpa</p>
+            <p>Скорость ветра: {{speed}} м/с</p>
+    </script>
+</body>
+</html>
